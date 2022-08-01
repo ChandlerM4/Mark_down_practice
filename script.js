@@ -267,3 +267,55 @@ function isLeap(year)
 }
 _________________________________________________________________________
 
+//Arrays on JavaScript
+
+var guestList = ["PS5","Nintendo","Xbox","Sega","Atari"];
+
+console.log(guestList[2]);
+
+//variable.includes: this command return only a boolean as false or true only.
+
+_________________________________________________________________________
+
+var guestList = ["PS5","Nintendo","Xbox","Sega","Atari"];
+
+var guestGame = prompt("What kind of game console do you like?");
+
+if(guestList.includes(guestGame))
+{
+    alert("Hi and Welcome.");
+}
+else
+{
+    alert("Sorry, maybe next time");
+}
+_________________________________________________________________________
+
+//Program that print the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz".
+//For numbers which are multiples of both three and five print "FizzBuzz".
+
+var output = [];
+output.push(1);
+//output will have 1 in its array [1].
+output.push(2);
+//Now, output will have 1 and 2 items in its array [1,2].
+output.pop;
+//With this command will remove only the last item from the array. It will be [1] agian.
+
+var output = [];
+var count = 1;
+
+function  fuzzBuzz() {
+
+    output.push(count);
+
+    count++;
+    
+    console.log(output);
+    
+}
+
+//array --> variable.push(number): this command add a new item in the array.
+//array --> variable.pop: this command remove the last item in the array.
+
+
