@@ -332,4 +332,16 @@ function fizzBuzz() {
 //array --> variable.push(number): this command add a new item in the array.
 //array --> variable.pop: this command remove the last item in the array.
 
+function whosPaying(names) {
+    
+    var nombreOfPeople = names.length;
+
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+
+    var randomPerson = names[randomPersonPosition];
+
+
+    return randomPerson + " is going to buy lunch today!";
+    
+}
 
