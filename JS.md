@@ -32,7 +32,7 @@ console.log("Tienes " + adressCount + " y te quedan " + (150 - adressCount) + " 
 ```
 ```javascript
 function whosPaying(names) {
-    var nombreOfPeople = names.length;
+    var numberOfPeople = names.length;
     var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
     var randomPerson = names[randomPersonPosition];
     return randomPerson + " is going to buy lunch today!";
