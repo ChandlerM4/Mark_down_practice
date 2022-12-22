@@ -23,8 +23,9 @@ typeof variableName;
 ```
 * Con **".length"** se le da un contador de caracteres e indica cuantos caracteres maximos se permiten.
 ```javascript
+var adress = prompt("Compose your adress: ");
 var adressCount = adress.length;
-console.log("Tienes " + adressCount + " y te quedan " + (150 - adressCount) + " en el contador.");
+console.log("You have written " + adressCount + " characters, you have " + (150 - adressCount) + " characters remaining.");
 ```
 ```javascript
 function whosPaying(names) {
