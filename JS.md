@@ -3,10 +3,6 @@
 * var: global variable expresion.
 * let: block variable expresion (only works inside one function or block).
 * const: work as a variable but can't change its value.
-```javascript
-    var adressCount = adress.length;
-    console.log("Tienes " + adressCount + " y te quedan " + (150 - adressCount) + " en el contador.");
-```
 
 * Muestra alerta en un pop up.
 ```javascript
