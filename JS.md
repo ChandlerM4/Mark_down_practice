@@ -65,7 +65,7 @@ function lifeInWeeks(age) {
 }
 lifeInWeeks(23);
 ```
-* Con el metodo **"Math.random"** con el cual se pueden conseguir numeros aleatorios.
+* Con el metodo **"Math.random"** con el cual se pueden conseguir numeros aleatorios. Produce un numero random. Genera numeros del 0 al 0.9999999 (nunca llega a 1).
 ```javascript
 function whosPaying(names) {
     var numberOfPeople = names.length;
@@ -73,6 +73,11 @@ function whosPaying(names) {
     var randomPerson = names[randomPersonPosition];
     return randomPerson + " is going to buy lunch today!";
 }
+```
+```javascript
+var n =  Math.random();
+n = n*6;
+n = Math.floor(n);
 ```
 * **"Math.floor"** es utilizado para redondear al entero no importa las decimales.
 ```javascript
@@ -83,12 +88,6 @@ let x = Math.floor(1.6);
 ```javascript
 // Retorna el valor 20
 x = Math.round(20.49);
-```
-* **""** Produce un numero random. Genera numeros del 0 al 0.9999999 (nunca llega a 1).
-```javascript
-var n =  Math.random();
-n = n*6;
-n = Math.floor(n);
 ```
 > ## **Arrays en JavaScript**
 ```javascript
