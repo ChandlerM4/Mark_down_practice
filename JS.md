@@ -27,14 +27,6 @@ var adress = prompt("Compose your adress: ");
 var adressCount = adress.length;
 console.log("You have written " + adressCount + " characters, you have " + (150 - adressCount) + " characters remaining.");
 ```
-```javascript
-function whosPaying(names) {
-    var numberOfPeople = names.length;
-    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
-    var randomPerson = names[randomPersonPosition];
-    return randomPerson + " is going to buy lunch today!";
-}
-```
 * Con **".slice(0,0)"** muestra unicamente los caracteres seleccionados. Primer # será con el que comience y segundo # el que termine.
 ```javascript
 var names = ['Rita', 'Pedro', 'Miguel', 'Ana', 'Vanesa'];
@@ -72,6 +64,15 @@ function lifeInWeeks(age) {
     console.log("You have "+ days +" days, "+ weeks +" weeks and "+ months +" months left.");
 }
 lifeInWeeks(23);
+```
+* Con el metodo **"Math.random"** con el cual se pueden conseguir numeros aleatorios.
+```javascript
+function whosPaying(names) {
+    var numberOfPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    var randomPerson = names[randomPersonPosition];
+    return randomPerson + " is going to buy lunch today!";
+}
 ```
 * **"Math.floor"** es utilizado para redondear al entero no importa las decimales.
 ```javascript
