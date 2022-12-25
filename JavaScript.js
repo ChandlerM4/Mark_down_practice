@@ -109,50 +109,6 @@ function calcBottles(startingMoney, costPerBottle) { //Segunda funcion
 
 getMilk(5); //Se ejecuta la primera funcion con el valor ingresado, en este caso valor de (5)
 _________________________________________________________________________
-function getMilk(money) { //Primera funcion
-
-    console.log("leaveHouse");
-    console.log("movieRight");
-    console.log("movieRight");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("moveUp");
-    console.log("movieRight");
-    console.log("movieRight");
-
-//Manda a llamar a la segunda funcion la cual sus variables toman los valores de la primera funcion (money, 1.5)
-
-    console.log("buy "+ calcBottles(money, 1.5) +" bottles of milk"); //esta funcion regresa con la operacion "X", y muestra ese resultado
-    
-    console.log("movieLeft");
-    console.log("movieLeft");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("moveDown");
-    console.log("movieLeft");
-    console.log("movieLeft");
-    console.log("enterHouse");
-
-//Retorna la operacion del residuio entre el money y 1.5 = 0.5
-    return change(money, 1.5); //Return solo devuelve el valor pero no lo muestra, necesita de una variable que muestre la funcion
-
-}
-
-function calcBottles(startingMoney, costPerBottle) { //Segunda funcion
-    var numberOfBottles = Math.floor(startingMoney / costPerBottle); //Se declara una variable con esta operacion "X"
-        return numberOfBottles; //Este retorna la variable con su valor
-
-}
-
-function calcChanges(startingMoney, costPerBottle) {
-    var change = startingMoney % costPerBottle;
-    return change;
-}
-
-console.log("Hey master, here is your " + getMilk(5) + " change."); //Se ejecuta la primera funcion con el valor ingresado, en este caso valor de (5)
-_________________________________________________________________________
 
 function bmiCalculator(weight, height) //Aqui se implementan los inputs. En estas variables se almacenaran los valores que se ingresaran.
 {
