@@ -220,29 +220,24 @@ console.log('The empty string has a length of ' + empty.length);
 
 > ## **The Fibonacci Code**
 ```javascript
-function fibonacciGeneretor(n)
-{
-    var arra = [];
-    if(n === 1)
-    {
-        arra = [0]; //solo lo agregara con esta condicion.
-    }
-    else if(n === 2)
-    {
-        arra = [0,1]; //solo lo agregara con esta condicion.
-    }
-    else 
-    {
-        arra = [0,1]; //solo lo agregara con esta condicion.
-        for(var i = 2; i < n; i++) //i se le da con valor a 2 por que son los 2 datos dentro del array.
-        {
-            //se suman las posiciones anteriores y se agrega con un push un tercero.
-            arra.push(arra[arra.length - 2] + arra[arra.length - 1]);
-        }
-    }
-    return arra;
+function fibonacciSerie(n){
+var output = [];
+if(n === 1){
+  output = [0];
 }
-//este para ejecutar con valor inicial.
-arra = fibonacciGeneretor(1);
-console.log(arra);
+else if(n === 2){
+  output = [0, 1];
+}
+else{
+  output = [0, 1]; //se agrega el [0,1]
+  
+  for(var i = 2; i < n; i++){
+    output.push(output[output.length - 2] + output[output.length - 1]); //se agrega el ultimo digito [0,1,1]
+  }
+}
+  return output;
+}
+
+output = fibonacciSerie(7);
+console.log(output);
 ```
